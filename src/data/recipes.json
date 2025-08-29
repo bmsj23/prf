@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Chicken Adobo",
-    "image": "/assets/chicken-adobo.jpg",
+    "image": "/assets/adobo.jpg",
     "description": "A classic Filipino dish of chicken simmered in soy sauce, vinegar, garlic, and peppercorns.",
     "ingredients": ["1 kg chicken", "1/2 cup soy sauce", "1/2 cup vinegar", "1 head garlic", "1 tsp peppercorns", "2 bay leaves"],
     "instructions": ["Combine all ingredients in a pot and simmer until chicken is tender.", "Optional: Pan-fry the chicken after simmering for a crispy texture.", "Serve hot with steamed rice."]
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Sinigang na Baboy",
-    "image": "/assets/sinigang-na-baboy.jpg",
+    "image": "/assets/sinigang.jpg",
     "description": "A savory and sour soup made with pork, tamarind broth, and various vegetables.",
     "ingredients": ["1 kg pork belly", "1.5 liters water", "1 packet tamarind soup mix", "1 large onion", "2 large tomatoes", "1 radish", "1 bundle water spinach"],
     "instructions": ["Boil pork in water until tender.", "Add onions, tomatoes, and radish. Simmer for 10 minutes.", "Stir in tamarind mix and add water spinach. Serve hot."]
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Beef Kare-Kare",
-    "image": "/assets/beef-kare-kare.jpeg",
+    "image": "/assets/karekare.jpg",
     "description": "A rich and savory Filipino stew with a thick peanut sauce, oxtail, and vegetables.",
     "ingredients": ["1 kg oxtail", "1/2 cup peanut butter", "1/4 cup toasted ground rice", "1 bundle string beans", "2 eggplants", "1 banana blossom", "Bagoong (shrimp paste)"],
     "instructions": ["Boil oxtail until tender.", "In a new pot, whisk in ground rice and peanut butter with the broth until thick.", "Add oxtail and vegetables. Serve with bagoong."]
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Pork Sisig",
-    "image": "/assets/pork-sisig.jpg",
+    "image": "/assets/sisig.jpg",
     "description": "A sizzling, savory dish made from chopped pig's face and belly, seasoned with calamansi and chili.",
     "ingredients": ["500g pig's face/ears", "250g pork belly", "1 large onion, chopped", "3 chili peppers", "1/4 cup soy sauce", "Calamansi", "1 egg"],
     "instructions": ["Boil pork parts until tender, then grill or broil until crispy.", "Chop finely and sauté with onions and chili.", "Serve on a sizzling plate, top with a raw egg, and squeeze calamansi over."]
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "name": "Pancit Palabok",
-    "image": "/assets/pancit-palabok.jpg",
+    "image": "/assets/palabok.jpg",
     "description": "A noodle dish with a rich shrimp sauce, topped with shrimp, crushed chicharon, and hard-boiled eggs.",
     "ingredients": ["Rice noodles (palabok noodles)", "Ground pork", "Shrimp", "Smoked fish flakes (tinapa)", "Chicharon, crushed", "Hard-boiled eggs", "Annatto powder for color"],
     "instructions": ["Cook noodles as per package instructions.", "Make the sauce by sautéing pork and shrimp, then simmering with shrimp broth and annatto.", "Pour sauce over noodles and add all toppings."]
@@ -98,7 +98,7 @@
   {
     "id": 13,
     "name": "Laing",
-    "image": "/assets/laing.jpeg",
+    "image": "/assets/laing.jpg",
     "description": "A spicy Bicolano dish of shredded taro leaves cooked in thick coconut milk with shrimp paste and chili.",
     "ingredients": ["Dried taro leaves", "2 cups thick coconut milk", "1/2 cup shrimp paste", "Pork or shrimp for flavor", "Siling labuyo (red chili)"],
     "instructions": ["Simmer pork/shrimp in coconut milk with shrimp paste and chili.", "Add the dried taro leaves and continue to simmer without stirring until leaves are soft.", "Stir gently and cook until the sauce is very thick and oily."]
@@ -154,7 +154,7 @@
   {
     "id": 20,
     "name": "Ginataang Manok",
-    "image": "/assets/ginataang-manok.png",
+    "image": "/assets/ginataang-manok.jpg",
     "description": "A Filipino chicken stew made from chicken in coconut milk with green papaya and leafy vegetables.",
     "ingredients": ["1 kg chicken, cut up", "2 cups coconut milk", "1 small green papaya, wedged", "Ginger", "Onion", "Garlic", "Siling haba (long green chili)"],
     "instructions": ["Sauté ginger, garlic, and onion. Add chicken and cook until color changes.", "Pour in coconut milk and bring to a simmer.", "Add papaya and chili, and cook until chicken and papaya are tender."]

@@ -63,16 +63,13 @@ const Homepage = () => {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      <div className="w-full bg-yellow-200 py-12">
+      <div className="w-full bg-[#fcca59] py-22 h-180 flex flex-col items-center justify-center">
         <div className="text-center mb-8 mt-30 opacity-100 container mx-auto px-4 flex flex-col items-center justify-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 font-heading">
+          <h2 className="text-6xl max-w-3xl font-bold text-gray-800 mb-4 font-heading">
             Discover Filipino Cuisine
           </h2>
-          <p className="text-gray-600 max-w-2xl pt-4 px-4 mx-auto text-justify font-body">
-            Explore our collection of traditional Filipino dishes, from the
-            classic adobo to hearty sinigang. Find your next meal in our various
-            recipe selections and discover the ingredients and cooking
-            instructions. Bring the flavors of the Philippines to your kitchen!
+          <p className="text-gray-600 text-2xl max-w-2xl pt-4 px-4 mx-auto text-justify font-body">
+            Explore Filipino recipes you&apos;ll love! From classic favorites to everyday comfort food, enjoy recipes made simple and delicious. Perfect for everyday meals or special occasions, bring the taste of the Philippines straight to your kitchen.
           </p>
         </div>
         <SearchBar

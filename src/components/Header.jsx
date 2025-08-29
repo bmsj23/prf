@@ -6,27 +6,36 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="bg-yellow-300 text-gray-700 shadow-lg fixed w-full z-10">
+    <header className="bg-[#fcca59] text-gray-700 fixed h-25 w-full z-10 flex flex-row justify-center items-center">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold font-heading">Pinoy Recipe Finder</h1>
+            <h1 className="text-4xl font-bold font-heading">
+              Pinoy Recipe Finder
+            </h1>
           </Link>
 
-          <nav className="flex items-center space-x-6">
-            <Link to="/" className={`transition-colors duration-200 font-medium ${
+          <nav className="flex items-baseline space-x-6 text-2xl">
+            <Link
+              to="/"
+              className={`px-4 sm:px-6 py-2 rounded-3xl transition-colors duration-200 font-medium ${
                 location.pathname === "/" ? "text-yellow-700" : "text-gray-700"
               }`}>
               Home
             </Link>
-            <div className="rounded-lg px-4 pr-7 py-2 w-34">
-                <Link to="/favorites" className={`transition-colors duration-200 font-medium flex items-center justify-between font-body ${
-                  location.pathname === "/favorites" ? "text-yellow-700" : "text-gray-700"}`}>
-                  <span>Favorites</span>
-                <span className={`"bg-yellow-300 text-gray-700 rounded-full px-2 py-1 text-md font-extrabold w-8 text-center ${
-                  location.pathname === "/favorites" ? "text-yellow-700" : "text-gray-700"}`}>({favoritesCount})</span>
-              </Link>
-            </div>
+
+            <Link
+              to="/favorites"
+              className={`flex items-center space-x-2 font-medium transition-colors duration-200 bg-white px-4 sm:px-6 py-3.5 rounded-3xl ${
+                location.pathname === "/favorites"
+                  ? "text-yellow-700"
+                  : "text-gray-700"
+              }`}>
+              <span className="leading-none">Favorites</span>
+              <span className="flex items-center justify-center bg-[#fcca59] text-white rounded-full py-2 text-sm font-bold w-6 h-6 text-center">
+                {favoritesCount}
+              </span>
+            </Link>
           </nav>
         </div>
       </div>

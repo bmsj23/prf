@@ -24,7 +24,7 @@ const RecipeCard = ({ recipe, from = 'recipes' }) => {
       className="block group">
         {/* transform group-hover:-translate-y-1 */}
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 h-100 flex flex-col">
-        <div className="relative h-48 overflow-hidden flex-shrink-0">
+        <div className="relative h-58 overflow-hidden flex-shrink-0">
           <img
             src={recipe.image}
             alt={recipe.name}
@@ -38,7 +38,7 @@ const RecipeCard = ({ recipe, from = 'recipes' }) => {
             onClick={handleFavoriteClick}
             className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-200 hover:scale-110 cursor-pointer ${
               isRecipeFavorite
-                ? "bg-yellow-400 text-white shadow-lg"
+                ? "bg-red-400 text-white shadow-lg"
                 : "bg-white bg-opacity-90 text-gray-600 hover:bg-opacity-100"
             }`}
             aria-label={isRecipeFavorite ? "Remove from favorites" : "Add to favorites"}>
@@ -59,7 +59,7 @@ const RecipeCard = ({ recipe, from = 'recipes' }) => {
             <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full font-body">
               {recipe.ingredients?.length || 0} ingredients
             </span>
-            <span className="text-white text-sm font-medium font-body shadow-2xl rounded-2xl bg-yellow-400 px-4 py-2 hover:bg-yellow-600">View Recipe</span>
+            <span className="text-yellow-400 text-sm font-medium font-body shadow-2xl rounded-2xl bg-white border-2 border-yellow-400 px-4 py-2 hover:bg-yellow-400 hover:text-white">View Recipe</span>
           </div>
         </div>
       </div>
