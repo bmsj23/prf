@@ -66,7 +66,7 @@ const Homepage = () => {
       <div className="w-full bg-yellow-200 py-12">
         <div className="text-center mb-8 mt-30 opacity-100 container mx-auto px-4 flex flex-col items-center justify-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-heading">
-            Discover Authentic Filipino Recipes with PRF
+            Discover Filipino Cuisine
           </h2>
           <p className="text-gray-600 max-w-2xl pt-4 mx-auto text-justify font-body">
             Explore our collection of traditional Filipino dishes, from the
@@ -108,7 +108,7 @@ const Homepage = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
               {filteredRecipes.map((recipe) => (
                 <RecipeCard key={recipe.id} recipe={recipe} />
               ))}
