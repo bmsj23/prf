@@ -40,7 +40,7 @@ const Favorites = () => {
             <div className="text-6xl mb-4">💔</div>
             <h3 className="text-xl font-semibold text-gray-700 mb-2 font-heading">No favorites yet</h3>
             <p className="text-gray-500 mb-6 font-body">Browse our recipes and add your favorites to see them here.</p>
-            <Link to="/" className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors duration-200 inline-block font-body">
+            <Link to="/" className="bg-yellow-400 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition-colors duration-200 inline-block font-body font-bold">
               Explore Recipes
             </Link>
           </div>
