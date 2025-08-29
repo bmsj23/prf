@@ -68,7 +68,7 @@ const Homepage = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-heading">
             Discover Filipino Cuisine
           </h2>
-          <p className="text-gray-600 max-w-2xl pt-4 mx-auto text-justify font-body">
+          <p className="text-gray-600 max-w-2xl pt-4 px-4 mx-auto text-justify font-body">
             Explore our collection of traditional Filipino dishes, from the
             classic adobo to hearty sinigang. Find your next meal in our various
             recipe selections and discover the ingredients and cooking

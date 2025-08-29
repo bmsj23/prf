@@ -25,7 +25,7 @@ const Favorites = () => {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      <main className="container mx-auto px-4 py-8 pt-24">
+      <main className="container mx-auto px-4 py-8 pt-36 flex flex-col items-center justify-center">
         <div className="text-center mb-8 mt-7">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 font-heading">Your Favorite Recipes</h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-body">
@@ -37,7 +37,7 @@ const Favorites = () => {
 
         {favorites.length === 0 ? (
           <div className="text-center py-12">
-            <div className="text-6xl mb-4">💔</div>
+            {/* <div className="text-6xl mb-4"></div> */}
             <h3 className="text-xl font-semibold text-gray-700 mb-2 font-heading">No favorites yet</h3>
             <p className="text-gray-500 mb-6 font-body">Browse our recipes and add your favorites to see them here.</p>
             <Link to="/" className="bg-yellow-400 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition-colors duration-200 inline-block font-body font-bold">
