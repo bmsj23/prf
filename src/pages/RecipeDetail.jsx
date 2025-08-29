@@ -14,15 +14,14 @@ const RecipeDetail = () => {
 
   const { addToFavorites, removeFromFavorites, isFavorite } = useFavorites();
 
-  // Determine where user came from for contextual breadcrumb
   const cameFromFavorites =
     location.state?.from === "favorites" ||
     (typeof document !== "undefined" &&
       document.referrer.includes("/favorites"));
 
   const breadcrumbText = cameFromFavorites
-    ? "Back to Favorites"
-    : "Back to Recipes";
+    ? "⬅ Back to Favorites"
+    : "⬅ Back to Recipes";
   const breadcrumbPath = cameFromFavorites ? "/favorites" : "/";
 
   useEffect(() => {
@@ -99,25 +98,25 @@ const RecipeDetail = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="bg-[#fcca59] pt-32 pb-16">
+        <section className="bg-[#fcca59] pt-32 pb-36">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               {/* Breadcrumb */}
               <nav className="mb-8">
                 <Link
                   to={breadcrumbPath}
-                  className="text-gray-700 transition-colors duration-200 font-body bg-white hover:bg-gray-200 px-4 py-2 rounded-lg font-semibold shadow-md">
+                  className="text-gray-700 transition-colors duration-200 font-body bg-white hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold shadow-md">
                   {breadcrumbText}
                 </Link>
               </nav>
 
-              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 mt-10 items-center">
                 {/* Image Section */}
-                <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative h-110 md:h-110 rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src={recipe.image}
                     alt={recipe.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
                 </div>
@@ -135,15 +134,15 @@ const RecipeDetail = () => {
                   {/* Favorite Button */}
                   <button
                     onClick={handleFavoriteToggle}
-                    className={`inline-flex items-center space-x-3 px-8 py-4 rounded-xl font-semibold transition-all duration-200 cursor-pointer w-fit font-body text-lg ${
+                    className={`inline-flex items-center space-x-5 px-8 py-4 rounded-xl font-semibold transition-all duration-200 cursor-pointer w-fit font-body text-lg ${
                       isRecipeFavorite
-                        ? "bg-white text-gray-800 hover:bg-gray-200 shadow-md"
-                        : "bg-gray-800 text-white hover:bg-gray-900 shadow-lg"
+                        ? "bg-red-400 text-white shadow-md"
+                        : "bg-white text-yellow-500 shadow-lg"
                     }`}>
                     <span>
                       {isRecipeFavorite
-                        ? "Remove from Favorites"
-                        : "Add to Favorites"}
+                        ? "❤️ Remove from Favorites"
+                        : "🤍 Add to Favorites"}
                     </span>
                   </button>
                 </div>
@@ -183,8 +182,8 @@ const RecipeDetail = () => {
               {/* Instructions Card */}
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <div className="flex items-center mb-6">
-                  <div className="bg-blue-100 p-3 rounded-xl mr-4">
-                    <BookOpen className="w-6 h-6 text-blue-600" />
+                  <div className="bg-yellow-100 p-3 rounded-xl mr-4">
+                    <BookOpen className="w-6 h-6 text-yellow-500" />
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900 font-heading">
                     Instructions
@@ -194,8 +193,8 @@ const RecipeDetail = () => {
                   {recipe.instructions.map((instruction, index) => (
                     <div
                       key={index}
-                      className="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors duration-200">
-                      <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold flex-shrink-0">
+                      className="flex items-center space-x-4 p-4 bg-yellow-50 rounded-lg hover:bg-blue-100 transition-colors duration-200">
+                      <div className="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold flex-shrink-0">
                         {index + 1}
                       </div>
                       <span className="text-gray-700 leading-relaxed font-body">

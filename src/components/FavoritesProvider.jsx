@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { FavoritesContext } from "../contexts/FavoritesContext.js";
 
-// helper function to load favorites from localStorage
 const loadFavoritesFromStorage = () => {
   try {
     const savedFavorites = localStorage.getItem("pinoy-recipe-favorites");
@@ -13,7 +12,6 @@ const loadFavoritesFromStorage = () => {
   }
 };
 
-// helper function to save favorites to localStorage
 const saveFavoritesToStorage = (favorites) => {
   try {
     localStorage.setItem("pinoy-recipe-favorites", JSON.stringify(favorites));
@@ -24,13 +22,11 @@ const saveFavoritesToStorage = (favorites) => {
 };
 
 const FavoritesProvider = ({ children }) => {
-  // initialize state with data from localStorage
   const [favorites, setFavorites] = useState(() => {
     console.log("Initializing FavoritesProvider...");
     return loadFavoritesFromStorage();
   });
 
-  // save sa localStorage tuwing nagbabago ang favorites
   useEffect(() => {
     console.log("🔄 Favorites changed, saving to localStorage...", favorites);
     saveFavoritesToStorage(favorites);

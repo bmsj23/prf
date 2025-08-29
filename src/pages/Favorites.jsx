@@ -28,15 +28,16 @@ const Favorites = () => {
 
       {favorites.length === 0 ? (
         <main className="flex-grow flex flex-col items-center justify-center text-center px-4">
-          <h3 className="text-2xl font-semibold text-gray-700 mb-2 font-heading">
-            Your cookbook is empty! 🍳
+          <span className="text-8xl">🍳</span>
+          <h3 className="text-5xl font-semibold text-gray-700 mt-12 mb-2 font-heading">
+            No favorites yet!
           </h3>
-          <p className="text-gray-500 mb-6 font-body">
+          <p className="text-gray-500 mb-6 font-body text-2xl mt-4">
             Browse our recipes and add your favorites to see them here.
           </p>
           <Link
             to="/"
-            className="bg-[#fcca59] text-gray-800 px-6 py-3 rounded-lg hover:bg-yellow-400 transition-colors duration-200 inline-block font-body font-bold shadow-md"
+            className="bg-[#fcca59] text-white px-12 py-5 rounded-lg hover:bg-yellow-400 transition-colors duration-200 inline-block font-body font-bold shadow-md text-3xl mt-4"
           >
             Explore Recipes
           </Link>
@@ -48,7 +49,7 @@ const Favorites = () => {
             <h2 className="text-4xl font-bold text-gray-800 mb-4 font-heading">
               Your Favorite Recipes
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto font-body">
+            <p className="text-gray-600 max-w-2xl text-xl mx-auto font-body">
               You have {favorites.length} favorite recipe
               {favorites.length !== 1 ? "s" : ""} saved. Cook them anytime!
             </p>
@@ -74,7 +75,7 @@ const Favorites = () => {
                 </p>
               </div>
             ) : (
-              <div className="w-full">
+              <div className="w-full mt-6">
                 {searchTerm && (
                   <div className="text-center mb-6">
                     <p className="text-gray-600 font-body">
@@ -84,7 +85,8 @@ const Favorites = () => {
                     </p>
                   </div>
                 )}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {filteredFavorites.map((recipe) => (
                     <RecipeCard
                       key={recipe.id}

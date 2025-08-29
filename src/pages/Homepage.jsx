@@ -65,11 +65,14 @@ const Homepage = () => {
 
       <div className="w-full bg-[#fcca59] py-22 h-180 flex flex-col items-center justify-center">
         <div className="text-center mb-8 mt-30 opacity-100 container mx-auto px-4 flex flex-col items-center justify-center">
-          <h2 className="text-6xl max-w-3xl font-bold text-gray-800 mb-4 font-heading">
+          <h2 className="text-6xl max-w-3xl font-medium text-gray-800 mb-4 font-serif">
             Discover Filipino Cuisine
           </h2>
-          <p className="text-gray-600 text-2xl max-w-2xl pt-4 px-4 mx-auto text-justify font-body">
-            Explore Filipino recipes you&apos;ll love! From classic favorites to everyday comfort food, enjoy recipes made simple and delicious. Perfect for everyday meals or special occasions, bring the taste of the Philippines straight to your kitchen.
+          <p className="text-gray-600 text-[22px] max-w-4xl pt-4 px-4 mx-auto text-center font-body">
+            Explore Filipino recipes you&apos;ll love! From classic favorites
+            to everyday comfort food, enjoy recipes made simple and delicious.
+            Perfect for everyday meals or special occasions, bring the taste of
+            the Philippines straight to your kitchen.
           </p>
         </div>
         <SearchBar
@@ -80,6 +83,9 @@ const Homepage = () => {
       </div>
 
       <main className="container mx-auto px-4 py-8 pt-4">
+        <h2 className="text-center font-bold text-[48px] pt-10 pb-10 font-serif">
+          Classic Filipino Recipes
+        </h2>
 
         {filteredRecipes.length === 0 ? (
           <div className="text-center py-12">
@@ -95,7 +101,7 @@ const Homepage = () => {
           </div>
         ) : (
           <>
-            <div className="mb-6">
+            <div className="mb-6 px-6.5">
               <p className="text-gray-600">
                 {searchTerm
                   ? `Found ${filteredRecipes.length} recipe${
@@ -105,7 +111,7 @@ const Homepage = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-y-14 justify-items-center">
               {filteredRecipes.map((recipe) => (
                 <RecipeCard key={recipe.id} recipe={recipe} />
               ))}

@@ -7,9 +7,10 @@ const Header = () => {
 
   return (
     <header className="bg-[#fcca59] text-gray-700 fixed h-25 w-full z-10 flex flex-row justify-center items-center">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-8.5 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-4">
+          <img src="../favicon.ico" className="w-12"></img>
             <h1 className="text-4xl font-bold font-heading">
               Pinoy Recipe Finder
             </h1>
@@ -19,7 +20,7 @@ const Header = () => {
             <Link
               to="/"
               className={`px-4 sm:px-6 py-2 rounded-3xl transition-colors duration-200 font-medium ${
-                location.pathname === "/" ? "text-yellow-700" : "text-gray-700"
+                location.pathname === "/" ? "text-gray-700" : "text-yellow-50"
               }`}>
               Home
             </Link>
@@ -28,7 +29,7 @@ const Header = () => {
               to="/favorites"
               className={`flex items-center space-x-2 font-medium transition-colors duration-200 bg-white px-4 sm:px-6 py-3.5 rounded-3xl ${
                 location.pathname === "/favorites"
-                  ? "text-yellow-700"
+                  ? "text-yellow-400"
                   : "text-gray-700"
               }`}>
               <span className="leading-none">Favorites</span>
