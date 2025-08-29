@@ -1,4 +1,4 @@
-# ./
+# prf
 
 A modern React application built with Vite.
 
@@ -20,7 +20,7 @@ A modern React application built with Vite.
 
 1. Navigate to the project directory:
    ```bash
-   cd ./
+   cd prf
    ```
 
 2. Install dependencies:
